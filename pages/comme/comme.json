@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "navigationBarTitleText": "相机",
+  "usingComponents": {},
+  "enablePullDownRefresh": false
+}

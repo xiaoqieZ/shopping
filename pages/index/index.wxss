@@ -1,0 +1,71 @@
+/**index.wxss**/
+/* 轮播图 */
+swiper-item{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0 0 0;
+}
+.cnaps{
+  display: flex;
+  font-size: 30rpx;
+}
+.m-bbt{
+  color: rgb(127, 177, 241)
+}
+.lunbo_font{
+  width: 96%;
+  height: 90%;
+  border-radius: 15rpx;
+  background-color: #666;
+}
+/* 滚动导航栏 */
+.nav{
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav_item{
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.nav_item.active{
+  border-bottom: 8rpx solid #de688b;
+}
+/* 视频列表 */
+.video_wrap{
+  padding:20rpx 10rpx;
+}
+.video_item{
+  width: 98%;
+  height: 440rpx;
+  margin-bottom: 20rpx; 
+  border-bottom: 5rpx solid rgb(230, 225, 225);
+}
+.video_img{
+  position: relative;
+}
+.video_image{
+ width: 100%;
+ height: 320rpx;
+ border-radius: 10rpx;
+background-color: #666;
+}
+.video_info{
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 24rpx;
+  background-color: rgba(0, 0, 0, .5)
+}
+.video_title{
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

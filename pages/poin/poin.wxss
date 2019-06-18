@@ -1,0 +1,105 @@
+/* pages/poin/poin.wxss */
+.other_list{
+  margin-top: 20rpx;
+}
+/* 视频样式 */
+.video_info{
+  padding: 0 20rpx;
+}
+.video_dde{
+  width: 100%;
+  height: 300rpx;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video_titlefont{
+  font-weight: 800;
+}
+.video_title{
+  font-weight: 800;
+}
+.video_fontSize{
+  color: #666;
+  padding-left: 20rpx;
+}
+.other_list image{
+ width: 90%;
+ border-radius: 10rpx;
+ background-color: #666;
+}
+.other_item{
+  padding-bottom: 20rpx;
+}
+.other_item{
+  display: flex;
+  justify-content: space-between;
+}
+.other_img{
+  flex: 3;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other_image{
+  height: 160rpx;
+}
+.other_title{
+  flex: 5;
+  width: 50%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.others_font{
+  color: red;
+  font-size: 14px;
+
+}
+.others_plays{
+  color: #666;
+  font-size: 14px;
+}
+/* 评论 */
+.comment_title{
+  padding-left: 10rpx;
+}
+.comment_list{
+  margin-bottom: 10rpx;
+  padding: 20rpx 10rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.comment_img{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.comment_img image{
+  width: 60%;
+  border-radius: 50%;
+  background-color: #666;
+}
+.comment_image{
+  height: 70rpx;
+}
+.comment_message{
+  flex: 4
+}
+.comment_message{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.commet_name{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.comment_font{
+  font-size: 14px;
+}

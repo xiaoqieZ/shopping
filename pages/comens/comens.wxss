@@ -1,0 +1,64 @@
+.comensTitle{
+  margin: 20rpx 10rpx;
+  display: flex;
+  justify-content: center;
+}
+.comensTitle image{
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  left: 15rpx;
+  top:30rpx;
+}
+.comensTitle input{
+  width: 92%;
+  height: 60rpx;
+  border: 3rpx solid #666;
+  border-radius: 20rpx;
+  padding: 0 46rpx;
+}
+.comensdel{
+  position: absolute;
+  right: 25rpx;
+  top:26rpx;
+  line-height: 50rpx;
+}
+.comensdel text{
+  font-size: 30rpx;
+  color: #666;
+}
+.videosList{
+  width: 100%;
+  height: 400rpx;
+}
+.videosList image{
+  width: 100%;
+  height: 100%
+}
+.videosTitle text{
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+   display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.videos{
+  padding-bottom: 20rpx;
+}
+.videoFont{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, .5);
+}
+.videoFont view{
+  display: flex;
+  align-items: center
+}
+.videoFont image{
+  width: 38rpx;
+  height: 38rpx;
+}

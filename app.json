@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/comme/comme",
+    "pages/coment/coment",
+    "pages/poin/poin",
+    "pages/comens/comens",
+    "components/fenech/fenech",
+    "pages/boxted/boxted"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小茄子",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance":50
+
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于天气哦！你信吗"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar":{
+    "color":"#000",
+    "selectedColor":"#1afa29",
+    "backgroundColor":"#f8f1f1",
+  "list":[{
+    "pagePath":"pages/index/index",
+    "text": "首页",
+    "iconPath":"images/home.png",
+    "selectedIconPath":"images/home2.png"
+  },
+  {
+    "pagePath":"pages/comme/comme",
+    "text":"相机",
+    "iconPath":"images/xiangji.png",
+    "selectedIconPath":"images/xiangji1.png"
+  },
+  {
+    "pagePath": "pages/coment/coment",
+    "text": "购物",
+    "iconPath": "images/Shopping.png",
+    "selectedIconPath": "images/Shoppings.png"
+  },
+  {
+    "pagePath": "pages/logs/logs",
+    "text": "我的",
+    "iconPath": "images/wode.png",
+    "selectedIconPath": "images/wode2.png"
+  }
+  ]
+}
+}

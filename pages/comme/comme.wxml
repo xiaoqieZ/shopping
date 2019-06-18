@@ -1,0 +1,7 @@
+<view class='phone'>
+<button bindtap='messagezp'>选择照片</button>
+<view class='image_list'  wx:for="{{imageList}}" wx:key="{{index}}">
+<image src='{{item}}' show-menu-by-longpress="true" data-index='{{item}}' bindtap='suolvetu' mode='widthFex'></image>
+</view>
+
+</view>

@@ -1,0 +1,36 @@
+<view class='comensSou'>
+<view class='comensTitle'>
+<image src='../../images/sousuo.png'></image>
+<input type='text' placeholder='大家都在搜程序猿' bindconfirm='searchVideo' bindinput='searchList' value="{{comensList}}" placeholder-style="color:#666"></input>
+<view class='comensdel' catchtap='comensDel'>
+<text>取消</text>
+</view>
+</view>
+<!-- 视频列表 -->
+<scroll-view style='height:1330rpx' scroll-y >
+<view class='videos' wx:for="{{videosAv}}" wx:key="index" bindtap='playbas' data-index="{{index}}">
+<!-- <navigator url='../boxted/boxted?id={{item.id}}'> -->
+<view class='videosTitle'>
+<text>{{item.title}}</text>
+</view>
+<view class='videosList'>
+<image lazy-load="true" src='{{item.img_url}}' ></image>
+</view>
+<view class='videoFont'>
+<view>
+<image src='../../images/like.png'></image>
+<text>{{item.thumbs}}</text>
+</view>
+<view>
+<image src='../../images/play.png'></image>
+<text>{{item.play_num}}</text>
+</view>
+<view>
+<image src='../../images/comment.png'></image>
+<text>{{item.comment_num}}</text>
+</view>
+</view>
+<!-- </navigator> -->
+</view>
+</scroll-view>
+</view>

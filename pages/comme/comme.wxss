@@ -1,0 +1,9 @@
+.phone button{
+ width: 100%;
+}
+.image_list image{
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  padding: 10rpx;
+}

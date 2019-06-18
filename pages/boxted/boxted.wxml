@@ -1,0 +1,69 @@
+
+<!-- 视频 -->
+<view class="section tc">
+  <video class="myVideo" src="{{play.play_url}}" enable-danmu danmu-btn controls></video>
+</view>
+
+<view>
+<scroll-view>
+<view class='comment'>
+<block wx:for="{{videosList}}" wx:key="{{index}}">
+<text class="{{index===videoplay?'active':''}}" data-index="{{index}}" bindtap='videotap'>{{item}}</text>
+</block>
+</view>
+</scroll-view>
+</view>
+
+
+<swiper style="height:924rpx"  current="{{videoplay}}" bindchange="introduce">
+<swiper-item >
+<view class='videoplayTitle'>
+<view class='playTitle'>标题：{{play.title}}</view>
+<view class='playTime'>发布时间：{{play.updated_at}}</view>
+<view>推荐视频</view>
+</view>
+
+<!-- 推荐视频 -->
+<scroll-view scroll-y style='height:800rpx'>
+<block wx:for="{{playsvideo}}" wx:key="{{index}}">
+<view class='videomoder'>
+<view class='videomoderimg'>
+<image  src='{{item.img_url}}'></image>
+</view>
+<view class='videomoderadd'>
+<view class='videomodertitle'>{{item.title}}</view>
+<view class='videomodertime'>
+<view class='videomodetimes'>发布时间：{{item.created_at}}</view>
+<view class='videomoderplay'>
+<text>播放量：{{item.play_num}}</text>
+<text>评论量：{{item.thumbs}}</text>
+</view>
+</view>
+</view>
+</view>
+</block>
+</scroll-view>
+</swiper-item>
+
+ <!-- 评论 -->
+<swiper-item>
+<scroll-view  style='height: 924rpx;' scroll-y="true">
+<block wx:for="{{play.comments}}" wx:key="{{id}}" >
+<view class='commentsList'>
+<view class='profiletwo'>
+<view class='profileimg'>
+<image src='{{item.profile}}'></image>
+</view>
+<text>{{item.comment_user}}</text>
+</view>
+<view class='time'>{{item.created_at}}</view>
+<view>
+<text class='comments'>{{item.content}}</text>
+</view>
+</view>
+</block>
+</scroll-view>
+</swiper-item>
+</swiper>
+
+

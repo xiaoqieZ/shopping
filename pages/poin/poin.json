@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "视频详情",
+  "usingComponents": {
+    "fenech": "../../components/fenech/fenech"
+  }
+}

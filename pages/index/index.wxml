@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<!-- 公共头部 -->
+<view>
+<fenech></fenech>
+</view>
+
+<!-- 定位 -->
+<view class="retailStore">
+   <view class="cnaps  borderBottom">
+    <text>所在城市：</text>
+    <input class='m-bbt' placeholder-class='plhStyle' type='number' maxlength='50' placeholder='' bindinput="bindKeyInput" value='{{province}} {{city}}' disabled></input>
+  </view>
+</view>
+   
+<!-- 滚动导航 -->
+<view class='nav_wrap'>
+<scroll-view class='nav' scroll-x scroll-left>
+<view bindtap='activeNav' data-index="{{index}}" class="nav_item {{index===currentIndexNav?'active':''}}" wx:for="{{navlist}}" wx:key="{{index}}">
+{{item.text}}
+</view>
+</scroll-view>
+<!-- 轮播图 -->
+</view>
+<swiper indicator-dots="turn" indicator-color="rgba(255,250,250,1)" indicator-active-color="#FFC0CB" autoplay="tuen" circular="turn" interval="4000">
+<swiper-item wx:for="{{navswiper}}" wx:key="{{index}}" class="lunbo">
+<image class='lunbo_font' src='{{item}}' bindtap='lunbosuolve' data-img="{{item}}"></image>
+</swiper-item>
+</swiper>
+
+
+<!-- 视频列表 -->
+<swiper style='height:860rpx;' current="{{currentIndexNav}}" bindchange='swiperPlay'> 
+<!-- 第一个页面 -->
+<swiper-item>
+<view class='video_wrap'>
+<scroll-view  scroll-y  style='height:770rpx'>
+<navigator url="../poin/poin?id={{item.id}}" class='video_item' wx:for="{{videoslist}}" wx:key="{{index}}">
+<!-- 图片容器 -->
+<view class='video_img'>
+<image class='video_image' show-menu-by-longpress="true" src='{{item.imgSrc}}'></image>
+<!-- 播放量 -->
+<view class='video_info'>
+<view class='video_count'>{{item.playCount}}</view>
+<!-- 评论量 -->
+<view class='video_paly'>{{item.commentCount}}</view>
+</view>
+</view>
+<!-- 视频标题 -->
+<view class='video_title'>
+{{item.desc}}
+</view>
+</navigator>
+</scroll-view>
+</view>
+</swiper-item>
+<!-- 动画页面 -->
+<swiper-item>
+<view>
+<text>动画页面</text>
+</view>
+</swiper-item>
+<swiper-item>
+<view>
+<text>番剧页面</text>
+</view>
+</swiper-item>
+<swiper-item>
+<view>
+<text>国创页面</text>
+</view>
+</swiper-item>
+<swiper-item>
+<view>
+<text>音乐页面</text>
+</view>
+</swiper-item>
+</swiper>

@@ -1,0 +1,121 @@
+<view class='xinxi_title'>
+  <view class='claer_img'>
+    <image src='../../images/01.jpg' bindtap='onclikL'></image>
+  </view>
+  <view class='lili'>
+    <view class='clear_title'>
+      臻龙食府
+    </view>
+    <view class='clear_text'>
+      店铺还行，主要是来寻个乐子，欢迎大家光临。
+    </view>
+  </view>
+</view>
+<!-- 中间 -->
+<view class='business'>
+  <scroll-view class='business_scroll'>
+    <view class='nav_tach {{index==businessed?"active":""}}' wx:for="{{business}}" wx:key="{{index}}" data-index="{{index}}" bindtap='manualSwiper'>{{item}}</view>
+  </scroll-view>
+</view>
+
+      <!-- 大滑动 -->
+<swiper style='height: 1010rpx;' current="{{businessed}}" bindchange='valuateswipere'>
+      <!-- 第一个子滑块 -->
+  <swiper-item>
+  <!-- 商店滑块 -->
+    <view class='catename_top'>
+      <!-- 左边滑动 -->
+      <view class='catename_heig'>
+        <scroll-view class='catename_title' style='height: 838rpx;' scroll-y="true" scroll-into-view="{{navid}}" scroll-top="{{scrollTop}}">
+          <view class='catename_scroll {{index == menused?"menuhh":""}}' data-menuplay="{{index}}" wx:for="{{catenamelist}}" wx:key="{{index}}" bindtap='menus'>
+            {{item.catename}}
+          </view>
+        </scroll-view>
+      </view>
+
+      <!-- 右边滑动 -->
+      <view class='goods_top'>
+        <scroll-view scroll-with-animation scroll-into-view='a{{menused}}' class='goods_title' scroll-y style='height: 836rpx;'>
+        
+          <block class='goods_scroll' wx:for="{{catenamelist}}" wx:for-item='cate'  wx:key="catename">
+            <view id='a{{index}}'>
+
+            <text>{{cate.catename}}</text>
+            <block wx:for="{{cate.goods}}" wx:for-item="good" wx:key="gid" >
+            
+            <!-- 商品 -->
+            <view class='goods_commodity'>
+              <!-- 图片 -->
+              <view class='goods_img'>
+                <image src='{{good.gimage}}' bindtap='goodsImage' data-img="{{good.gid}}"></image>
+              </view>
+              <!-- 详情 -->
+              <view class='goods_details'>
+                <!-- 标题 -->
+                <view class='goodsWz'>{{good.gname}}</view>
+                <!-- 销量 -->
+                <view class='Salesvolume'>销量：{{good.gsale}}</view>
+                <!-- 商品介绍 -->
+                <view class='goodsTeyle'>{{good.gdesc}}</view>
+                <!-- 价格 -->
+                <view class='price'>
+                  <view class='price_ed'>￥{{good.gprice}}</view>
+                  <view class='andifaiw' wx-if="{{goods['good'+good.gid]['total']}}" bindtap='jianhaoA' data-pdd="{{good.gprice}}" data-peromes="good{{good.gid}}">
+                    <view>-</view>
+                  </view>
+                  <text wx:if="{{goods['good'+good.gid]['total']}}">{{goods['good'+good.gid]['total']?goods['good'+good.gid]['total']:''}}</text>
+                    <view class='buttomAnniu' bindtap='buttonTj' data-gprice='{{good.gprice}}' data-gid="good{{good.gid}}">
+                    <view>+</view>
+                  </view>
+                </view>
+              </view>
+            </view>  
+            
+          </block>
+          </view>
+      </block>
+
+
+        </scroll-view>
+    </view>
+
+    <!-- 支付卡座 -->
+    <view class='bottom' hidden='{{hideBottom}}'>
+      <view class='bottom_img'>
+        <image src='../../images/box.png'></image>
+      </view>
+      <view  class='yuandian' wx:if='{{yuandian>0?true:false}}'>
+       <text>{{yuandian}}</text>
+      </view>
+      <view class='bottom_text'>
+        <text>
+      ￥{{priceZ}}
+    </text>
+        <button type="primary" form-type="submit" catchtap='button'>
+          {{yuandian>0?"去结算":"未选择商品"}}
+        </button>
+      </view>
+    </view>
+    </view>
+  </swiper-item>
+
+<!-- 评价 -->
+  <swiper-item class="evaluate">
+    <view class='evaluate_font'>
+      <text class='evaluateed'>给个好评呗！</text>
+      <view class='evaluate_botton'>
+        <text>
+———这是我目前的底线———
+        </text>
+      </view>
+    </view>
+  </swiper-item>
+
+  <!-- 店家 -->
+  <swiper-item class="evaluate">
+    <view class='evaluate_size'>
+      <text>欢迎大家光临本店，本店有上好的酒肉款待大家。</text>
+    </view>
+  </swiper-item>
+
+</swiper>

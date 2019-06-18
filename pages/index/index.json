@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "fenech":"../../components/fenech/fenech"
+  }
+}

@@ -1,0 +1,201 @@
+.xinxi_title{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(90, 152, 202)
+}
+.claer_img{
+  flex: 2;
+  width: 20%;
+  height: 160rpx;
+  padding: 20rpx
+  
+}
+.claer_img image{
+  width: 100%;
+  height: 100%;
+}
+.lili{
+  flex: 6;
+  width: 75%;
+  color: #fff;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.clear_title{
+  font-size: 18px;
+  font-weight: 800;
+}
+.clear_text{
+  font-size: 15px;
+}
+
+/* 中部导航 */
+.business{
+  border-bottom: 5rpx solid rgb(233, 228, 228);
+}
+.business_scroll .nav_tach{
+  width: 135rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  padding: 0 30rpx;
+  display: inline-block;
+  text-align: center;
+}
+.active{
+  border-bottom: 8rpx solid #de688b;
+  font-weight: 800;
+}
+/* 底部 */
+.catename_top{
+  display: flex;
+  justify-content: space-between;
+}
+.catename_heig{
+  width: 26%;
+  background-color: #666;
+}
+.catename_title{
+  flex: 3;
+  background-color: rgb(235, 231, 231);
+}
+.catename_scroll{
+  padding: 30rpx 20rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+.menuhh{
+background-color: #fff;
+font-weight: 800;
+color: #000;
+}
+.goods_top{
+  flex: 5;
+  width: 60%;
+ padding: 0 20rpx;
+}
+.evaluate{
+  border-top:36rpx solid rgb(238, 232, 232);
+}
+.evaluate_botton{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  position: absolute;
+  bottom: 100rpx;
+}
+.evaluate_size{
+  padding: 50rpx
+}
+.bottom{
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 55rpx;
+  background-color: rgb(90, 152, 202)
+}
+.bottom_img{
+  width: 20%;
+  height: 135rpx;
+  padding: 20rpx;
+  position: absolute;
+  bottom: -15rpx
+  
+}
+.bottom_img image{
+  width: 100%;
+  height: 100%;
+}
+.bottom_text{
+  width: 70%;
+  height: 40rpx;
+  line-height:40rpx; 
+  margin-left: 180rpx;
+  display: flex;
+  justify-content: space-between;
+}
+  .bottom_text text{
+    color: #fff;
+    font-weight: 800;
+  }
+.bottom_text button{
+  height: 120rpx;
+  line-height: 120rpx;
+  position: fixed;
+  right: 0;
+}
+.goods_commodity{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+.goods_img{
+  width: 40%;
+  height: 200rpx;
+}
+.goods_img image{
+  width: 100%;
+  height: 100%;
+}
+.goods_details{
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goodsWz{
+  font-weight: 800;
+}
+.Salesvolume{
+  font-size: 30rpx;
+}
+.goodsTeyle{
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+}
+.buttomAnniu{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 35rpx;
+  border: 5rpx solid rgb(90, 152, 202);
+  color: #fff;
+  text-align: center;
+  background-color: rgb(90, 152, 202);
+  border-radius:50%; 
+}
+.price_ed{
+  color: red;
+  font-weight: 800;
+}
+.yuandian{
+  width: 40rpx;
+  height: 40rpx;
+  color: #fff;
+  line-height: 40rpx;
+  text-align: center;
+  border: 5rpx solid red;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 120rpx;
+  top: -10rpx;
+}
+.andifaiw{
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 35rpx;
+  border: 5rpx solid red;
+  color: #fff;
+  text-align: center;
+  background-color: red;
+  border-radius:50%; 
+}

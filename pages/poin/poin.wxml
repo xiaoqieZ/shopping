@@ -1,0 +1,65 @@
+<!--pages/poin/poin.wxml-->
+<fenech></fenech>
+
+<view class='video_info'>
+<!-- 视频 -->
+<view src="{{videocurren.videoSrc}}" class='video_dde' >视频损坏，小茄子正在维护中，敬请谅解，谢谢</view>
+<!-- 标题 -->
+<view class='video_title'>{{videocurren.videoTitle}}</view>
+<!-- 视频作者-->
+ <view class='video_name'>
+ <text class='video_titlefont'>{{videocurren.author}}</text>
+ <text class='video_fontSize'>{{videocurren.playCount}}播放</text>
+ <text class='video_fontSize'>{{videocurren.commentCount}}评论</text>
+ <text class='video_fontSize'>{{videocurren.date}}</text>
+ </view>
+</view>
+
+<!-- 推荐视频 -->
+<view class='other_list'>
+<navigator class='other_item' wx:for="{{videoothers}}" wx:key="{{index}}">
+<!-- 推荐视频 -->
+<view class="other_img">
+<image class='other_image' src='{{item.imgSrc}}'></image>
+</view>
+<!-- 详细 -->
+<view class='other_title'>
+<!-- 标题 -->
+<view class='others_font'>{{item.title}}</view>
+<view class='others_plays'>
+<text>{{item.playMsg}}w播放</text>
+<text>{{item.commentCount}}评论</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<!-- 评论 -->
+<view class='comment_wrap'>
+<view class='comment_title'>
+评论（{{commets.commentTotalCount}}）
+</view>
+<!-- 评论人 -->
+<view class='comment_list'  wx:for="{{commets.commentList}}" wx:key="{{index}}">
+<!-- 左边 -->
+<view class='comment_img'>
+<!-- 头像 -->
+<image src='{{item.userIconSrc}}' class='comment_image'></image>
+</view>
+<!-- 评论内容 -->
+<view class='comment_message'>
+<!-- id时间 -->
+<view class='commet_name'>
+<text>{{item.username}}</text>
+<text>{{item.commentDate}}</text>
+</view>
+<!-- 内容 -->
+<view class='comment_font'>
+{{item.commentInfo}}
+</view>
+</view>
+</view>
+</view>
+
+
+

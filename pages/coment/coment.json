@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "购物",
+  "disableScroll":true,
+  "usingComponents": {},
+  "enablePullDownRefresh": false
+}

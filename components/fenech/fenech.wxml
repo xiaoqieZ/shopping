@@ -1,0 +1,15 @@
+<view class='nua'>
+<view class='logo'>
+<image class='logo_img' src='../../images/bilibili.png'></image>
+</view>
+<view class='search_icon' catchtap='souList'>
+<image style='width:60rpx;height:60rpx' src='../../images/sousuo.png'></image>
+</view>
+<view class='user_icon' bindtap='video'>
+ <image style='width:54rpx;height:54rpx' src='../../images/shipin.png'></image>
+</view>
+<view class='down_app' style='height:47rpx' bindtap='download'>
+下载APP
+</view>
+</view>
+
